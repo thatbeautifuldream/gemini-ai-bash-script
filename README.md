@@ -36,18 +36,21 @@ function ai() {
 ai "$@"
 ```
 
+## Setup
+
+1. Create a new shell script in your root folder called `gemini.sh`
+2. Copy the script above into the file
+3. Run `chmod +x gemini.sh` to make the file executable
+4. Export your GOOGLE_API Key either to the terminal session using `export GOOGLE_API="your api key"` or add it at somewhere in your `.bashrc` file.
+4. Run `./gemini.sh "prompt"` to get an AI result
+
+
 ## Usage
 
 ```bash
 ./gemini.sh "prompt"
 ```
 
-## Setup
-
-1. Create a new shell script in your root folder called `gemini.sh`
-2. Copy the script above into the file
-3. Run `chmod +x gemini.sh` to make the file executable
-4. Run `./gemini.sh "prompt"` to get an AI result
 
 ## Author
 
