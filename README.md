@@ -4,12 +4,6 @@
 
 This script is used to automate the process of getting back an AI result from Gemini to the given prompt.
 
-## Usage
-
-```bash
-./gemini.sh "prompt"
-```
-
 ## Script
 
 ```bash
@@ -40,6 +34,12 @@ function ai() {
 }
 
 ai "$@"
+```
+
+## Usage
+
+```bash
+./gemini.sh "prompt"
 ```
 
 ## Setup
