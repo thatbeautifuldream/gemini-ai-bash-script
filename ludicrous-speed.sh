@@ -119,4 +119,4 @@ function ai() {
         jq -r 'select(.candidates) | .candidates[].content.parts[].text'
 }
 
-ai $@
+ai "$@"

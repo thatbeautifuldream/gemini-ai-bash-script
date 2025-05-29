@@ -40,7 +40,7 @@ This script is used to automate the process of getting back an AI result from Ge
 ### Basic prompt
 
 ```bash
-ai What is the best Google product?
+ai "What is the best Google product?"
 ```
 
 ### List available models
