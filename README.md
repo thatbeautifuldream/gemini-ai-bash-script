@@ -72,6 +72,12 @@ ai --select-model "Explain quantum computing"
 ai "Generate a concise and descriptive commit message based on the current staged changes and a suitable PR description. Here are the staged changes: $(git diff --cached)"
 ```
 
+#### Review code before pushing
+
+```bash
+ai "Review the following code changes for potential issues, improvements, or best practices: $(git diff --cached)"
+```
+
 #### Detect issues in your system
 
 ```bash
