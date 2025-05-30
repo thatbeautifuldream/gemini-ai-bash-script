@@ -64,14 +64,23 @@ ai --list-models
 ai --select-model "Explain quantum computing"
 ```
 
-### Detect issues in your system
+### Interesting Use Cases
+
+#### Generate Commit Message from Staged Files and PR Description
+
+```bash
+ai "Generate a concise and descriptive commit message based on the current staged changes and a suitable PR description. Here are the staged changes: $(git diff --cached)"
+```
+
+#### Detect issues in your system
 
 ```bash
 ai "Which process is consuming more memory in $(ps -efa)"
-ai "is there anything extrange in the permissions of these files $(ls -lrt /usr/bin/ /etc/)"
 ```
 
-### More Interesting Use Cases
+```bash
+ai "is there anything extrange in the permissions of these files $(ls -lrt /usr/bin/ /etc/)"
+```
 
 #### Summarize Log Files
 
@@ -161,12 +170,6 @@ ai "What does this output from dmesg mean? $(dmesg | tail -n 20)"
 
 ```bash
 ai "Write a bash script to rename all .txt files in a folder to have today's date as a prefix"
-```
-
-#### Generate Commit Message from Staged Files and PR Description
-
-```bash
-ai "Generate a concise and descriptive commit message based on the current staged changes and a suitable PR description. Here are the staged changes: $(git diff --cached)"
 ```
 
 ---
