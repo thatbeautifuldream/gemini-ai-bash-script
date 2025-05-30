@@ -166,7 +166,7 @@ ai "Write a bash script to rename all .txt files in a folder to have today's dat
 #### Generate Commit Message from Staged Files and PR Description
 
 ```bash
-ai "Generate a concise and descriptive commit message based on the current staged changes and this PR description for the same. Here are the staged changes: $(git diff --cached)"
+ai "Generate a concise and descriptive commit message based on the current staged changes and a suitable PR description. Here are the staged changes: $(git diff --cached)"
 ```
 
 ---
