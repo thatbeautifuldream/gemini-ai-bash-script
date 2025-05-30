@@ -32,7 +32,16 @@ This script is used to automate the process of getting back an AI result from Ge
 - Choose to create an API key in a new project or use an existing one.
 - Once generated, copy your API key immediately and store it in a safe, private place. Treat it like a password!
 
-5. Export your GEMINI_API_KEY Key either to the terminal session using `export GEMINI_API_KEY="your api key"` or add it at somewhere in your `.bashrc` or `.zshrc` file.
+5. Provide your GEMINI_API_KEY to the script in one of the following ways:
+
+   - **Recommended:** Create a `.env` file in the same directory as the script with the following content:
+     ```env
+     GEMINI_API_KEY=your_actual_api_key_here
+     ```
+   - Or, export your GEMINI_API_KEY to the terminal session using `export GEMINI_API_KEY="your api key"`, or add it to your `.bashrc` or `.zshrc` file.
+
+   > The script will automatically load the `.env` file if it exists. If the API key is not set, it will print an error and exit.
+
 6. Run `ai prompt` or `./ludicrous-speed.sh prompt` to get an AI result
 
 ## Usage

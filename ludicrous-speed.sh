@@ -7,6 +7,19 @@
 # It requires the tools "curl" and "jq" to function as well as
 # Internet access and a Google Gemini API Key to access it
 
+# Load .env file if it exists
+if [[ -f .env ]]; then
+    set -a
+    source .env
+    set +a
+fi
+
+# Check if GEMINI_API_KEY is set
+if [[ -z "$GEMINI_API_KEY" ]]; then
+    echo "Error: GEMINI_API_KEY is not set. Please set it in your environment or in a .env file."
+    exit 1
+fi
+
 AVAILABLE_MODELS=(
     "gemini-1.5-flash-latest"
     "gemini-1.5-pro-latest"
