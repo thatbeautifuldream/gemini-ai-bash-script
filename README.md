@@ -66,6 +66,13 @@ ai --select-model "Explain quantum computing"
 
 ### Interesting Use Cases
 
+#### Prepare for standup
+
+```bash
+ai "Help me prepare for standup by summarizing my work from yesterday based on these commits: $(git log --since='yesterday.midnight' --until='midnight' --all --no-merges --oneline --author='work_email_here')"
+```
+
+
 #### Generate Commit Message from Staged Files and PR Description
 
 ```bash
